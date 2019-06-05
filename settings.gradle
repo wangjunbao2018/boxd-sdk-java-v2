@@ -1,0 +1,10 @@
+rootProject.name = 'boxd-client'
+include 'utils'
+include 'abi'
+include 'codegen'
+include 'abi'
+include 'tuples'
+include 'core'
+include 'crypto'
+include 'samples'
+

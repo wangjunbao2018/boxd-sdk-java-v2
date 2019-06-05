@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'one.contentbox.boxd'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile project(':abi')
+    compile project(':utils')
+    compile project(':tuples')
+    compile project(':core')
+    compile project(':crypto')
+
+    compile "com.squareup:javapoet:$javapoetVersion",
+    "info.picocli:picocli:$picocliVersion",
+    "org.slf4j:slf4j-api:$slf4jVersion",
+    "io.reactivex.rxjava2:rxjava:$rxjavaVersion"
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

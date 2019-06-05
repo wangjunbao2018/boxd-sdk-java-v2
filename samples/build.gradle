@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'one.contentbox.boxd'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':core')
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.56'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
